@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the entire calendar component */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between calendar and button */
+  align-items: center; /* Center the items horizontally */
+  padding: 20px;
+  height: 100%;
+  background-color: #d4dae0;
+}
+
+/* Center the calendar component */
+.react-calendar {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+  max-height: 400px; /* Optional: limit the calendar height */
+  min-width: 300px;
+  border: 1px solid #b3a4a4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Add styles for dates with events */
+.event-day {
+  background-color: #ffeb3b; /* Yellow color for event days */
+  border-radius: 50%;
+  color: #000;
+}
+
+/* Event list container */
+.event-list {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Event item style */
+.event {
+  margin: 5px 0;
+  padding: 8px;
+  background-color: #1875b8; /* Light blue background for events */
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.return-home-btn {
+  background-color: #000408; /* Blue background */
+  color: rgb(19, 3, 3); /* White text */
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Add padding for better clickability */
+  font-size: 16px; /* Medium font size */
+  font-weight: bold;
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+  margin-top: 20px; /* Add spacing above the button */
+  width: 200px; /* Fixed width to ensure consistency */
+  text-align: center;
+}
+
+.return-home-btn:hover {
+  background-color: #131516; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.return-home-btn:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.return-home-btn:active {
+  transform: scale(0.98); /* Slight scale effect on button press */
+}

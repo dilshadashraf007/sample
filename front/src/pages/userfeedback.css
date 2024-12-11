@@ -1,0 +1,32 @@
+/* userfeedback.css */
+
+/* Add some custom styles for the form container */
+.container {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Adjust the title for better visual hierarchy */
+.MuiTypography-h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style the buttons to stand out with hover effects */
+.MuiButton-root {
+  font-weight: 600;
+  text-transform: none;
+}
+
+/* Styling for alert messages */
+.MuiAlert-root {
+  border-radius: 8px;
+}
+
+/* Custom input field style */
+.MuiOutlinedInput-root {
+  border-radius: 16px !important;
+}

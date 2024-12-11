@@ -1,0 +1,47 @@
+.admin-feedback-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .feedback-table th,
+  .feedback-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .feedback-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  

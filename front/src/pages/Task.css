@@ -1,0 +1,228 @@
+/* General styling for the container */
+.profile-container {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  background-color: #e1d8e5;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #021306;
+  background-color: rgb(222, 219, 231);
+}
+
+/* Left part of the profile with photo */
+.profile-left {
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: #bd2424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(100, 18, 18);
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+/* Right part of the profile with details and actions */
+.profile-right {
+  flex: 2;
+  max-width: 600px;
+}
+
+.profile-details p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #020a0c;
+}
+
+.profile-actions {
+  margin-top: 10px;
+ 
+}
+
+.edit-btn,
+.logout-btn,
+.home-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover,
+.logout-btn:hover,
+.home-btn:hover {
+  background-color: #45a049;
+}
+
+.logout-btn {
+  background-color: #f44336;
+}
+
+.logout-btn:hover {
+  background-color: #e53935;
+}
+
+/* Notification Icon and Panel */
+.notification-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.notification-icon {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notification-panel {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 250px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-panel h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.notification-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-panel ul li {
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+/* Tasks Section */
+.tasks-container {
+  margin-top: 40px;
+}
+
+.tasks-container h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.task-input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.add-task-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-btn:hover {
+  background-color: #007B9D;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.task-item:hover {
+  background-color: #e8e8e8;
+}
+
+/* Error and Loading States */
+.error {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loading-text {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Home Button */
+.home-btn-container {
+  margin-top: 30px;
+}
+
+.home-btn {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #1976D2;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+  }
+
+  .profile-left, .profile-right {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .notification-panel {
+    width: 100%;
+    top: 20px;
+  }
+}

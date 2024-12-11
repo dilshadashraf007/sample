@@ -1,0 +1,89 @@
+/* Sign up page container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+/* Sign up form wrapper */
+.signup-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading */
+.signup-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="password"], select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+  border-color: #5cb85c;
+  outline: none;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Links section */
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  color: #5cb85c;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Error and Success messages */
+.error {
+  color: #d9534f;
+  text-align: center;
+}
+
+.success {
+  color: #5bc0de;
+  text-align: center;
+}

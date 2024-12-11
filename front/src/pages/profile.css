@@ -1,0 +1,195 @@
+.profile-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin-top: 800px;
+  background-color: #f3ebf7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(234, 241, 245, 0.986);
+}
+
+.profile-card {
+  background-color: hwb(0 90% 6%);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  scroll-margin-top: 50px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-left {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #d1bdbd;
+  font-weight: bold;
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details {
+  font-size: 16px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.edit-btn, .logout-btn, .home-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.home-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.edit-btn:hover, .logout-btn:hover, .home-btn:hover {
+  opacity: 0.8;
+}
+
+.work-type-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.work-type-section h3 {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="date"], select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+}
+
+.success, .error {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.notification-container {
+  margin-top: 30px;
+}
+
+.notification-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.notification-panel {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.notification-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notification-panel li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notification-panel li p {
+  margin: 0;
+}
+
+.notification-panel h4 {
+  margin-bottom: 10px;
+}
+
+.home-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
